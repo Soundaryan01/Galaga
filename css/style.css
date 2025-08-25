@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #00ffea;
+    text-shadow: 0 0 20px #00ffea;
+}
+
+/* ------------------------
+   Common Game Button - Neon Style
+------------------------- */
+.game-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #00ffff; /* neon cyan text */
+    background-color: transparent; /* transparent button */
+    border: 2px solid #00ffff; /* neon cyan outline */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Hover effect - glow intensifies */
+.game-btn:hover {
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+    transform: scale(1.05);
+}
+
+/* Active click effect */
+.game-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff, 0 0 24px #00ffff;
+}
+
+/* Optional: small variant */
+.game-btn.small {
+    padding: 8px 20px;
+    font-size: 16px;
+}
